@@ -1,0 +1,24 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f5f7fb;
+  color: #333;
+}
+
+/* Remove underline from links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Buttons show pointer on hover */
+button {
+  cursor: pointer;
+}
