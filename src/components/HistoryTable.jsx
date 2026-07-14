@@ -11,13 +11,16 @@ function HistoryTable() {
   }, []);
 
   const fetchHistory = async () => {
-    try {
-      const response = await API.get("/history");
-      setHistory(response.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  try {
+    const response = await API.get("/history");
+
+    console.log("History Response:", response.data);
+
+    setHistory(response.data);
+  } catch (error) {
+    console.log(error);
+  }
+};
 
   const exportCSV = () => {
     const headers = [
